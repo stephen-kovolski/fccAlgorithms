@@ -13,12 +13,13 @@
 
 
 function factorialize(num) {
-
+   let newNum = 1;
    for (let i=1; i<=num; i++){
-      let newNum ;
       newNum *= i
-      console.log(newNum)
    }
+
+   console.log(newNum)
+
    
  }
  
