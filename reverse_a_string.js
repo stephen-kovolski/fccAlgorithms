@@ -5,9 +5,11 @@
 
 function reverseString(str) {
   
-  for (let i = str.length-1; i > 0; i--){
+  for (let i = str.length-1; i >= 0; i--){
 
-    console.log(str[i])
+    new_string = str[i]
+
+    console.log(new_string)
 
   }
 
@@ -15,4 +17,4 @@ function reverseString(str) {
 
 }
 
-reverseString("hello");
+reverseString("good day mate");
