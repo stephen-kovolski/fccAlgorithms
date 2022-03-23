@@ -8,13 +8,8 @@ function frankenSplice(arr1, arr2, n) {
   var newArray = [];
  // return arr2;
 
- 
- for (var i = 0; i < arr1.length; i++){
-    for (var j = 0; j < arr2.length; j++){
-        newArray = arr1.slice[i][n]
-        
-    }
-}
+ arr1.slice(n)
+
 }
 
 frankenSplice([1, 2, 3], [4, 5, 6], 1);
