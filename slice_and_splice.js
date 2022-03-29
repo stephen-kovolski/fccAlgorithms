@@ -5,10 +5,16 @@
 // Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
 function frankenSplice(arr1, arr2, n) {
-  var newArray = [];
- // return arr2;
 
- arr1.slice(n)
+let new_array = []
+let new_array2 = []
+
+new_array = arr1.slice(0) 
+new_array2 = arr2.splice(n, arr1)
+
+
+console.log(new_array)
+console.log(new_array2)
 
 }
 
