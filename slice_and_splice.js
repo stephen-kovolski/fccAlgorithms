@@ -6,15 +6,9 @@
 
 function frankenSplice(arr1, arr2, n) {
 
-let new_array = []
-let new_array2 = []
-
-new_array = arr1.slice(0) 
-new_array2 = arr2.splice(n, arr1)
-
-
-console.log(new_array)
-console.log(new_array2)
+    let localArr = arr2.slice();
+    localArr.splice(n, 0, ...arr1);
+    console.log(localArr)
 
 }
 
