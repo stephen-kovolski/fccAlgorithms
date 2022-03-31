@@ -6,9 +6,9 @@
 
 function frankenSplice(arr1, arr2, n) {
 
-    let localArr = arr2.slice();
-    localArr.splice(n, 0, ...arr1);
-    console.log(localArr)
+    let newArr2 = [...arr2];
+    newArr2.splice(n, 0, ...arr1);
+    console.log(newArr2);
 
 }
 
