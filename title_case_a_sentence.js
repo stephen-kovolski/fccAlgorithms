@@ -2,21 +2,14 @@
 // For the purpose of this exercise, you should also capitalize connecting words like "the" and "of".
 
 function titleCase(str) {
-    let newString = "";
-    let words = str.split(" ");
+    let new_string = [];
+    let split_words = str.split(" ");
 
-    let upperCaseFirstLetter;
-    let remainingLetters;
+    //split_words.push(new_string);
 
-    for (let i = 0; i < words.length; i++){
-        upperCaseFirstLetter = words[i][0].toUpperCase();
-        remainingLetters = words[i].substring(1);
+    console.log(split_words)
 
-        newString += upperCaseFirstLetter+remainingLetters+" ";
-    }
 
-    console.log(newString)
-    return str;
 }
 
 titleCase("I'm a little tea pot");
