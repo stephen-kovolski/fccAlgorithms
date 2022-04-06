@@ -10,7 +10,8 @@ should return "found the needle at position 5" (in COBOL "found the needle at po
 
 function findNeedle(haystack) {
     
-    
+    haystack.findIndex('needle')
+    console.log("found the needle at position ")
 
   }
 
