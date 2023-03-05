@@ -13,18 +13,14 @@ This challenge can be solved with the .endsWith() method, which was introduced i
 function confirmEnding(str, target) {
 
   let amount = target.length;
- 
-  
-  if (str[str.length-1] == target){
-    console.log('true');
-  }else{
-    console.log('false')
-  }
 
+  let answer = str.slice(str.length - amount) === target;
+ 
+console.log(answer);
 }
 
-confirmEnding("Bastian", "n");
-confirmEnding("Joey", "y");
+confirmEnding("Bastian", "an");
+confirmEnding("Joey", "oey");
 confirmEnding("Chrissy", "a");
 confirmEnding("Stephen", "K");
 confirmEnding("Giggsy", "y");
