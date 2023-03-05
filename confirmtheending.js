@@ -12,11 +12,21 @@ This challenge can be solved with the .endsWith() method, which was introduced i
 
 function confirmEnding(str, target) {
 
+  //putting the target(argument) length to find out how many letters
+  //are needed to match the ending. 
   let amount = target.length;
 
-  let answer = str.slice(str.length - amount) === target;
+  //using slice() and rather than use the traditional (1, 3) I used 
+  //(str.length), how long the string is, minus the amount (target.length)
+  //If that is exactly equal to target than the concole will print true, 
+  //else, it prints false
+  if (str.slice(str.length - amount) === target){
+    console.log("true")
+  }
+  else{
+    console.log("false")
+  }
  
-console.log(answer);
 }
 
 confirmEnding("Bastian", "an");
