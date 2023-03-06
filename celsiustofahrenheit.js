@@ -17,6 +17,10 @@
 // convertCtoF(0);
 
 
+
+//******************SOLVED ABOVE.  BELOW IS STILL BEING WORKED ON******************************/
+
+
 //readline is a module. It comes iwth mathods 
 //that will be used below
 const readline = require("readline")
