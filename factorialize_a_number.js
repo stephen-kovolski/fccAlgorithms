@@ -10,12 +10,20 @@
 
 // factorialize(5);
 
-
 function factorialize(num) {
-   return num;
+   let total = 1;
+   for (let i = num; i > 0; i--){
+     total *= i;
+   }
+
+   console.log(total)
+
  }
  
  factorialize(5);
+ factorialize(10);
+ factorialize(20);
+ factorialize(1);
     
     
     
