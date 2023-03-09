@@ -21,22 +21,36 @@
 //******************SOLVED ABOVE.  BELOW IS STILL BEING WORKED ON******************************/
 
 
-//readline is a module. It comes iwth mathods 
-//that will be used below
-const readline = require("readline")
+function convertCtoF(){
+const readline = require('node:readline');
+const { stdin: input, stdout: output } = require('node:process');
+
+const rl = readline.createInterface({ input, output });
 
 
-//create interface has 2 arguments.  
-//Input, getting the info the user provides using the on() method.
-//output, outputting the question I ask the user using the write () method
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
+rl.question('What temperature would you like to convert to fahrenheit? ', (answer) => {
+  // TODO: Log the answer in a database
+  // console.log(`Thank you for your valuable feedback: ${answer}`);
+       let fahrenheit = answer*(9/5)+32;
+       console.log(`${answer} degrees celsius, is equal to ${fahrenheit} degrees fahrenheit.`);
+       closing();
+
+
+
+  rl.close();
 });
 
-//creating empty variable to store the users input. Also asking user the temp with a new line added in.
-rl.question("Hello, what temp would you like conmverted to fahrenheit?\n", );
 
-console.log(`You want the temperature ${answer} to be converted.`)
+function closing(){
+  rl.question("would you like to play again? Yes or No", (second_answer) =>{
+    if (second_answer == "yes"){
+      convertCtoF()
+    } else {
+      console.log("see ya next time!")
+    }
+  });
+};
 
-rl.close()
+};
+
+convertCtoF()
