@@ -11,6 +11,7 @@ function findElement(arr, func) {
         
     }
 
+
     console.log(num)
   }
   

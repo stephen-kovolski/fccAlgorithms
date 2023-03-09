@@ -10,9 +10,15 @@ should return "found the needle at position 5" (in COBOL "found the needle at po
 
 function findNeedle(haystack) {
     
-    haystack.findIndex('needle')
-    console.log("found the needle at position ")
+    position = haystack.indexOf('needle')
+    console.log(`found the needle at position ${position}`)
 
   }
 
-  findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])
+  findNeedle(['needle', 'hay', 'junk', 'hay', 'hay', 'moreJunk',  'randomJunk'])
+  findNeedle([ 'hay', 'needle','junk', 'hay', 'hay', 'moreJunk',  'randomJunk'])
+  findNeedle(['hay', 'junk', 'hay', 'needle', 'hay', 'moreJunk',  'randomJunk'])
+  findNeedle(['hay', 'junk', 'needle','hay', 'hay', 'moreJunk',  'randomJunk'])
+  findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk',  'randomJunk','needle'])
+  findNeedle(['hay', 'needle','junk', 'hay', 'hay', 'moreJunk',  'randomJunk'])
+  findNeedle(['hay', 'junk', 'hay', 'hay', 'needle','moreJunk',  'randomJunk'])
