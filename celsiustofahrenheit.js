@@ -21,7 +21,7 @@
 //******************SOLVED ABOVE.  BELOW IS STILL BEING WORKED ON******************************/
 
 
-function convertCtoF(){
+
 const readline = require('node:readline');
 const { stdin: input, stdout: output } = require('node:process');
 
@@ -41,16 +41,6 @@ rl.question('What temperature would you like to convert to fahrenheit? ', (answe
 });
 
 
-function closing(){
-  rl.question("would you like to play again? Yes or No", (second_answer) =>{
-    if (second_answer == "yes"){
-      convertCtoF()
-    } else {
-      console.log("see ya next time!")
-    }
-  });
-};
 
-};
 
-convertCtoF()
+
