@@ -4,17 +4,24 @@
 
 
 
-function repeatStringNumTimes(str, num) {
-  let new_string = "";
 
-  while (num > 0){
-    new_string += str
-    num--
-    
+function repeatStringNumTimes(str, num) {
+
+  if (num > 0){
+    console.log(str.repeat(num))
+  }
+  else {
+    console.log(" ")
   }
 
-  console.log(new_string)
-
+  
 }
 
-repeatStringNumTimes("abc", -3);
+repeatStringNumTimes("abc", 3);
+repeatStringNumTimes("*", 3)
+repeatStringNumTimes("abc", 3) 
+repeatStringNumTimes("abc", 4)
+repeatStringNumTimes("abc", 1)
+repeatStringNumTimes("*", 8) 
+repeatStringNumTimes("abc", -2) 
+repeatStringNumTimes("abc", 0)
