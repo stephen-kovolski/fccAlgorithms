@@ -13,7 +13,7 @@ function largestOfFour(arr) {
     for (let i = 0; i < arr.length; i++){  //outer loop
         let bigNum = 1;  //new variable to hold big numbers from arr[i]
         for (let j = 0; j < arr[i].length; j++){ //inner loop
-             if (arr[i][j] > bigNum){
+             if (arr[i][j] > bigNum){ //
                  bigNum = arr[i][j]
              }
             
