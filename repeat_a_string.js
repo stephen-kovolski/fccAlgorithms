@@ -31,16 +31,31 @@
 //*****************************************SOLVED ABOVE********************************************/
 
 
-function repeatStringNumTimes(str, num) {
+function repeatStringNumTimes(answer, num) {
 
   let newString = " ";
   
   for (let i = 0; i < num; i++){
-    newString += str
+    newString += answer
   }
   
   console.log(newString)
 
 }
 
-repeatStringNumTimes("abc", 3);
+
+
+
+const readline = require('node:readline');
+const { stdin: input, stdout: output } = require('node:process');
+
+const rl = readline.createInterface({ input, output });
+
+rl.question('What string would you like repeated? ', (answer) => {
+  repeatStringNumTimes();
+
+  // TODO: Log the answer in a database
+  console.log(`Thank you for your valuable feedback: ${answer}`);
+
+  rl.close();
+});
