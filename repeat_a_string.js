@@ -39,8 +39,7 @@ function repeatStringNumTimes(str, num) {
     newString += str
   }
   
-  
-  console.log(newString)
+  console.log(newString) 
 
 }
 
