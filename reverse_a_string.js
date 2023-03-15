@@ -17,3 +17,7 @@ function reverseString(str) {
 }
 
 reverseString("hello");
+reverseString("goodbye");
+reverseString("g'day");
+reverseString("top o the mornin");
+reverseString("hi");
