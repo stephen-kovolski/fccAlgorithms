@@ -12,8 +12,8 @@ function largestOfFour(arr) {
 
     for (let i = 0; i < arr.length; i++){  //outer loop. Allows the next loop (j) to go insode each of the 4 arrays
         let bigNum = 0;  //new variable to hold big numbers from arr[i]
-        for (let j = 0; j < arr[i].length; j++){ //inner loop that goes insode of the four arrays
-             if (arr[i][j] > bigNum){ //the number j is on, if thats bigger that the number in bigNum than bigNum becomes equal to j.  And so on until it finds the niggest number in the array.
+        for (let j = 0; j < arr[i].length; j++){ //inner loop that goes inside of the four arrays
+             if (arr[i][j] > bigNum){ //the number j is on, if thats bigger that the number in bigNum than bigNum becomes equal to j.  And so on until it finds the biggest number in the array.
                  bigNum = arr[i][j] //mentioned in notes directly above
              }
             
