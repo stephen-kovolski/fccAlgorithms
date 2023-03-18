@@ -13,10 +13,10 @@ function titleCase(str) {
     for (let i = 0; i < str_split.length; i++){
         uppercase_string = str_split[i][0].toUpperCase()
         lowercase_string = str_split[i].substring(1).toLowerCase()
-        console.log(uppercase_string);
-        console.log(lowercase_string);
         new_string += uppercase_string + lowercase_string;
+        
     }
+
 
         console.log(new_string);
 
