@@ -21,11 +21,9 @@ function twoSum(nums, target) {
        
     }
 
-    console.log(first_num);
+    console.log(first_num + second_num);
     console.log(second_num);
 
 };
 
 twoSum([5, 7, 9, 11], 20)
-
-//test
