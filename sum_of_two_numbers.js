@@ -12,19 +12,17 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1]
 
 function twoSum(nums, target) {
 
-    let numbers = nums[0];
+    let first_num = [];
     let second_num;
-    
-    for (let i = 0; i < nums.length; i++){
-      
-        if (nums[i] + numbers === 20){
-            second_num = nums[i];
-            console.log(second_num);
-        }
 
+    for (let i = 0; i < nums.length; i++){
+        first_num = nums[i];
+        second_num = nums[i]
+       
     }
 
-    console.log(numbers, second_num);
+    console.log(first_num);
+    console.log(second_num);
 
 };
 
