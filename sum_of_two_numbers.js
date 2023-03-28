@@ -22,7 +22,7 @@ function twoSum(nums, target) {
         for (let j = 0; j < nums.length; j++){
             if (nums[i] + nums[j] == target){
 
-                answer.push([i], [j])
+                answer.push(i, j)
                 answer.pop([i], [j])
                 
             }
