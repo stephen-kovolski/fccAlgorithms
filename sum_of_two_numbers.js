@@ -23,6 +23,7 @@ function twoSum(nums, target) {
             if (nums[i] + nums[j] == target){
 
                 answer.push([i], [j])
+                answer.pop([i], [j])
                 
             }
         }
