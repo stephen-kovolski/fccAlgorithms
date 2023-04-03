@@ -34,3 +34,4 @@ function mergeTwoLists(list1, list2) {
 mergeTwoLists([1,2,4], [1,3,4])
 mergeTwoLists([9, 13, 56], [17, 97, 35])
 mergeTwoLists([54, -1, 2], [104, 67, 0])
+mergeTwoLists([0, 2, 1], [0, 1, 3])
