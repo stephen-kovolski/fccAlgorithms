@@ -13,7 +13,19 @@ Output: [1,2,3]
 
 function deleteDuplicates(param) {
 
+    let first_number;
+    let second_number;
 
+    for (let i = 0; i < param.length; i++){
+        for (let j = 0; j < param.length; j++){
+            first_number.push(param[i])
+            second_number.push(param[j])
+
+        }
+
+        console.log(second_number);
+
+    }
     
 };
 
