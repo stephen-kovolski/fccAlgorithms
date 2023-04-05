@@ -10,15 +10,17 @@ Output: [1,2,3]
 */
 
 let first_num = [];
-let second_num;
 
 function deleteDuplicates(param) {
 
-    for (let i =0; i < param.length; i++){
-        for (let j =1; j < param.length; j++){
+    first_num = param
+
+    for (let i =0; i < first_num.length; i++){
+        for (let j =1; j < first_num.length; j++){
             
-            if (param[i]-param[j] == 0){
-                param.slice(i)
+            if (first_num[i]%first_num[j] == 0){
+                first_num.shift(i)
+                
             }
 
         }
