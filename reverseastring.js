@@ -3,8 +3,23 @@
 // Your result must be a string.
 // Remember to use Read-Search-Ask if you get stuck. Write your own code.
 
+
 function reverseString(str) {
-  return str;
+  let new_array = [];
+
+  for (let i = str.length-1; i >= 0; i--){
+    
+    new_array.push(str[i])
+
+  }
+
+  console.log(new_array.join(''));
+
+
 }
 
 reverseString("hello");
+reverseString("goodbye");
+reverseString("g'day");
+reverseString("top o the mornin");
+reverseString("hi");
