@@ -13,21 +13,20 @@ let first_num = [];
 
 function deleteDuplicates(param) {
 
-    first_num = param
+    for (let i = 0; i < param.length; i++){
 
-    for (let i =0; i < first_num.length; i++){
-        for (let j =1; j < first_num.length; j++){
-            
-            if (first_num[i]%first_num[j] == 0){
-                first_num.shift(i)
-                
+        first_num.push(param)
+
+        for (let j = 1; j < param.length; j++){
+
+            if (param[i] == param[j]){
+                first_num.shift
+                console.log(first_num);
+
             }
 
         }
-
     }
-    console.log(first_num);
-
 };
 
 
