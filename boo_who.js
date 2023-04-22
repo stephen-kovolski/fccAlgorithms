@@ -5,7 +5,25 @@
 
 
 function booWho(bool) {
-    return bool;
-  }
+    let test = bool
+
+    if (test == true || test == false){
+        console.log('true');
+    } else {
+        console.log('false');
+    }
+
+}
+        
   
-  booWho(null);
+booWho(null);
+booWho(true);
+booWho(false);
+booWho([1, 2, 3]);
+booWho([].slice);
+booWho(1);
+booWho(NaN);
+booWho("a");
+booWho("true");
+booWho("false");
+
