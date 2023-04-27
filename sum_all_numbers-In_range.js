@@ -2,9 +2,21 @@
 
 //For example, sumAll([4,1]) should return 10 because sum of all the numbers between 1 and 4 (both inclusive) is 10.
 
+let newArray = []
 
 function sumAll(arr) {
-  return 1;
+
+    if (arr[0] > arr[1]){
+        for (let i = arr[0]; i < arr[1]; i++){
+            newArray += arr[i]
+            console.log(newArray);
+        }
+    } else {
+        console.log('??');
+    }
+
+
 }
 
 sumAll([1, 4]);
+//sumAll([4, 1]);
