@@ -4,17 +4,22 @@
 
 //let newArray = []
 
-let largerNumber;
-let smallerNumber;
 
 function sumAll(arr) {
 
-    largerNumber = Math.max(arr)
-    smallerNumber = Math.min(arr)
+    largerNumber = Math.max(arr[0], arr[1])
+    smallerNumber = Math.min(arr[0], arr[1])
+    let finalArray = [];
 
-    console.log(largerNumber, typeof(smallerNumber));
-
+    for (let i = smallerNumber; i <= largerNumber; i++){
+            finalArray.push(i)
+    }
+    console.log(finalArray);
 }
 
 sumAll([1, 4]);
-//sumAll([4, 1]);
+sumAll([4, 1]);
+sumAll([5, 10]);
+sumAll([10, 50]);
+sumAll([7, 14]);
+sumAll([30, 10]);
