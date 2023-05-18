@@ -9,24 +9,20 @@ Input: head = [1,1,2,3,3]
 Output: [1,2,3]
 */
 
-let first_num = [];
+let first_num =[];
 
 function deleteDuplicates(param) {
 
     for (let i = 0; i < param.length; i++){
-
-        first_num.push(param)
-
         for (let j = 1; j < param.length; j++){
-
-            if (param[i] == param[j]){
-                first_num.shift
+            first_num.push(param)
+            if (param[i] % param[j] == 0){
                 console.log(first_num);
-
             }
-
         }
     }
+    console.log(first_num);
+
 };
 
 
