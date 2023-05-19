@@ -4,27 +4,15 @@ Falsy values in JavaScript are false, null, 0, "", undefined, and NaN
 */
 
 function bouncer(arr) {
-    
-    switch(false){
-        case "":
-            let quote = false
-            break;
-        case null:
-            let word = false
-            break;
-        case 0:
-            let zero = false
-            break;
-        case undefined:
-            let uWord = false
-            break;
-        case NaN:
-            let notNum = false
+let newArray = [];
+    for (let i =0; i < arr.length; i++){
+        if (arr[i] == '' || arr[i] == false || arr[i] == 0 || arr[i] == null || arr[i] == undefined || arr[i] == NaN){
+            newArray.push(arr[i])
+        }
     }
-
-
-
-
-  }
+    console.log(newArray);
+}
   
-  bouncer([7, "ate", "", false, 9]);
+bouncer([7, "ate", "", false, 9]);
+bouncer([false, null, 0, NaN, undefined, ""]);
+bouncer([null, NaN, 1, 2, undefined]);
