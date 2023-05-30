@@ -9,9 +9,10 @@ function spinalCase(str) {
     //newString.split(" ")
 
 
-    console.log(newString.join("-"));
+    newString.concat("-");
+    console.log(newString);
   }
   
   spinalCase('This Is Spinal Tap');
-//   spinalCase("thisIsSpinalTap")
-//   spinalCase("The_Andy_Griffith_Show")
+  spinalCase("thisIsSpinalTap")
+  spinalCase("The_Andy_Griffith_Show")
