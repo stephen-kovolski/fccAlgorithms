@@ -1,3 +1,6 @@
+// add all numbers in an array to find the sum
+
+
 function sumArray(arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
